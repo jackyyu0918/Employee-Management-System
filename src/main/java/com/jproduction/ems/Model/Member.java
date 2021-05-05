@@ -1,4 +1,4 @@
-package Model;
+package com.jproduction.ems.Model;
 
 import java.util.Date;
 
