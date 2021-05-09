@@ -8,13 +8,8 @@ import org.springframework.stereotype.Repository;
 
 import com.jproduction.ems.Model.Member;
 
-/**
- * @author Kit
- *
- */
 @Repository
-public interface MemberRepository extends JpaRepository<Member, String> {
-	
-	
+public interface MemberRepository extends JpaRepository<Member, Integer> {
+	public Member findByMid(int mid);
 	
 }

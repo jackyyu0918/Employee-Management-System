@@ -33,8 +33,8 @@ public class MemberController {
 	}
 	
 	@GetMapping("/member/{mid}")
-	public ResponseEntity<?> getMember(@PathVariable String mid) {
-        Optional<Member> member = memberRepository.findById(mid);
+	public ResponseEntity<?> getMember(@PathVariable int mid) {
+        Optional<Member> member = Optional.of(memberRepository.findByMid(mid)); //wrapped with optional !?
         return member.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }

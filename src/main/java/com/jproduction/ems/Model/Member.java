@@ -1,19 +1,21 @@
 package com.jproduction.ems.Model;
-
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 
 @Entity
-public class Member {
+@IdClass(MemberId.class)
+public class Member{
 
 	@Id
-	private String mid;
+	private int mid;
 	private String firstName;
 	private String lastName;
+	
+	@Id
 	private String email;
-	private String password;
 	private Date createtime;
 	private Date updatetime;
 	
@@ -33,22 +35,21 @@ public class Member {
 	 * @param createtime
 	 * @param updatetime
 	 */
-	public Member(String mid, String firstName, String lastName, String email, String password, Date createtime,
+	public Member(int mid, String firstName, String lastName, String email, String password, Date createtime,
 			Date updatetime) {
 		super();
 		this.mid = mid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		this.password = password;
 		this.createtime = createtime;
 		this.updatetime = updatetime;
 	}
 	
-	public String getMid() {
+	public int getMid() {
 		return mid;
 	}
-	public void setMid(String mid) {
+	public void setMid(int mid) {
 		this.mid = mid;
 	}
 	public String getFirstName() {
@@ -68,12 +69,6 @@ public class Member {
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
 	}
 	public Date getCreatetime() {
 		return createtime;
