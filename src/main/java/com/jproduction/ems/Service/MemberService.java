@@ -1,6 +1,6 @@
 package com.jproduction.ems.Service;
 
-import com.jproduction.ems.Model.Member;
+import com.jproduction.ems.Model.emsOrg.Member;
 
 public interface MemberService {
 

@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jproduction.ems.Dao.MemberRepository;
-import com.jproduction.ems.Model.Member;
+import com.jproduction.ems.Dao.emsOrg.MemberRepository;
+import com.jproduction.ems.Model.emsOrg.Member;
 import com.jproduction.ems.Service.MemberService;
 
 @RestController

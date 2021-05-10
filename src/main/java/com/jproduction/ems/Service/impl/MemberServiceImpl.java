@@ -6,8 +6,8 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jproduction.ems.Dao.MemberRepository;
-import com.jproduction.ems.Model.Member;
+import com.jproduction.ems.Dao.emsOrg.MemberRepository;
+import com.jproduction.ems.Model.emsOrg.Member;
 import com.jproduction.ems.Service.MemberService;
 
 @Service

@@ -1,4 +1,4 @@
-package com.jproduction.ems.Model;
+package com.jproduction.ems.Model.emsOrg;
 import java.util.Date;
 
 import javax.persistence.Entity;

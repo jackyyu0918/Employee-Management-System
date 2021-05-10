@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.jproduction.ems.Dao.UserRepository;
-import com.jproduction.ems.Model.User;
+import com.jproduction.ems.Dao.emsAuth.UserRepository;
+import com.jproduction.ems.Model.emsAuth.User;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{
